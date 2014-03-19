@@ -9,6 +9,8 @@
 
 #include <jansson.h>
 #include <curl/curl.h>
+#include "server_communication.h"
+#include "http_functions.cpp"
 
 #include "server_communication.h"
 
@@ -16,7 +18,8 @@ using namespace std;
 
 int myID=5;
 
-int main(int argc, char *argv[]){
+int main(){
+    
     printf("\n");
     //
     map<string,double> debug_map;
@@ -32,5 +35,6 @@ int main(int argc, char *argv[]){
     server_send_command(command1,myID);
     server_send_command(command2,myID);
     server_get_commands(myID);
+    
     return 0;
 }

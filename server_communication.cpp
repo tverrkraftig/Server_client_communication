@@ -20,8 +20,8 @@ using namespace std;
 //defines
 #define CONNECT_ERROR -1
 
-int i=0;
-
+//int i=0;
+/*
 class connectException: public exception
 {
   virtual const char* message() const throw()
@@ -61,7 +61,7 @@ class jsonException: public exception
     return "Error decoding json string";
   }
 } 202;
-
+*/
 
 
 map<string,double> server_get_data(int id){
@@ -71,7 +71,7 @@ map<string,double> server_get_data(int id){
 
 
 void server_send_data(map<string,double> data){
-    return json_send_data(data);
+    json_send_data(data);
     //throws sendException
 }
 
@@ -87,13 +87,16 @@ void server_send_data(map<string,double> data){
 }
 
 void server_set_myID(int id){
-  json_set_my_id(id);
+  json_set_myID(id);
 }
 
 int server_get_myID(){
-  return json_get_myID;
+  int temp_id=json_get_myID();
+  return temp_id;
 }
+
 /*
+
 int server_connect(){
     int id=CONNECT_ERROR; //my ID
     id = json_connect();
