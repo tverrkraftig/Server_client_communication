@@ -389,18 +389,4 @@ int json_get_myID(){
     return temp_id;
 }
 
-int main(){
-    printf("\n");
-    //
-    map<string,double> debug_map;
-    debug_map["test1"]=8.9;
-    debug_map["test2"]=5678.456;
-
-    string command1="command_one";
-    string command2="command two";
-    json_send_command(command1,myID);
-    json_send_command(command2,myID);
-    debug_print_vector(json_get_commands(myID));
-
-}
 
