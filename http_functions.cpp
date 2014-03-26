@@ -7,8 +7,6 @@ using namespace std;
 
 #define BUFFER_SIZE  (256 * 1024)  /* 256 KB */
 
-#define URL_FORMAT   "https://wodinaz.com/%s"
-#define URL_SIZE     256
 
 struct write_result
 {

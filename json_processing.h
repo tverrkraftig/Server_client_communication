@@ -2,23 +2,13 @@
 #ifndef JSON_PROCESSING
 /* code */
 
-
-//defines
-#define BUFFER_SIZE  (256 * 1024)  /* 256 KB */
-#define URL_FORMAT   "https://wodinaz.com/%s"
-#define URL_SIZE     256
-
-#define PATH_CONNECT "connect"
-#define PATH_DATA "data/"
-#define PATH_COMMAND "command/"
-
 //includes
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include <jansson.h>
-#include "server_communication.h"
+
 #include "http_functions.cpp"
+
 #include <string>
 #include <iostream>
 #include <ostream>
@@ -27,7 +17,6 @@
 #include <map>
 
 using namespace std;
-int i=0;
 
 //functions
 static char* json_request(const char *url);
@@ -40,6 +29,8 @@ void json_send_data(map<string,double> mymap);
 map<string,double> json_get_data(int id);
 void json_send_command(string cmd,int id);
 vector<string> json_get_commands(int id);
+
+void debug_print_vector(vector<string> myvector);
 
 void json_set_myID(int id);
 int json_get_myID();

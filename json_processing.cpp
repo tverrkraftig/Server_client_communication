@@ -10,11 +10,7 @@
 #include <stdio.h>
 
 #include <jansson.h>
-
-#include "server_communication.h"
-#include "http_functions.cpp"
-
-#define BUFFER_SIZE  (256 * 1024)  /* 256 KB */
+#include "http_functions.h"
 
 #define URL_FORMAT   "https://wodinaz.com/%s"
 #define URL_SIZE     256
