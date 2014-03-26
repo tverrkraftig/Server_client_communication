@@ -8,6 +8,7 @@ using namespace std;
 #define BUFFER_SIZE  (256 * 1024)  /* 256 KB */
 
 
+
 struct write_result
 {
     char *data;

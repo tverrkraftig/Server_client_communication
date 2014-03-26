@@ -3,10 +3,10 @@ CC := g++ # This is the main compiler
 # CC := clang --analyze # and comment out the linker last line for sanity
 SRCDIR = .
 BUILDDIR := .
-TARGET := dynamixel
+TARGET := testing_1
 
-LIBDIRS		= -L .
-INCLUDEDIRS	= -I .
+LIBDIRS		=-L.
+INCLUDEDIRS	=-I.
 LDFLAGS		= $(LIBDIRS) -lcurl -ljansson
 
 SRCEXT := cpp

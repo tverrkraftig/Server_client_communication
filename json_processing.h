@@ -29,9 +29,9 @@ map<string,double> json_get_data(int id);
 void json_send_command(string cmd,int id);
 vector<string> json_get_commands(int id);
 
-void debug_print_vector(vector<string> myvector);
+//void debug_print_vector(vector<string> myvector);
 
-void json_set_myID(int id);
-int json_get_myID();
+//void json_set_myID(int id);
+//int json_get_myID();
 
 #endif
