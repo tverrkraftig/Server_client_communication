@@ -7,7 +7,6 @@
 #include <string.h>
 #include <stdio.h>
 
-#include "http_functions.cpp"
 
 #include <string>
 #include <iostream>

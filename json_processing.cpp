@@ -9,8 +9,22 @@
 #include <string.h>
 #include <stdio.h>
 
-#include <jansson.h>
-#include "http_functions.h"
+//C++ stuff
+#include <string>
+#include <iostream>
+#include <ostream>
+#include <sstream>
+#include <vector>
+#include <map>
+using namespace std;
+
+extern "C" {
+        #include <jansson.h>
+        #include "http_functions.cpp"
+}
+
+
+
 
 #define URL_FORMAT   "https://wodinaz.com/%s"
 #define URL_SIZE     256
@@ -21,14 +35,7 @@ int i=0;
 #define PATH_DATA "data/"
 #define PATH_COMMAND "command/"
 
-//C++ stuff
-#include <string>
-#include <iostream>
-#include <ostream>
-#include <sstream>
-#include <vector>
-#include <map>
-using namespace std;
+
 
 int myID=0;
 

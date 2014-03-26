@@ -10,7 +10,7 @@
 //#include "server_communication.h"
 #include "json_processing.h"
 
-int myID=0;
+int testID=0;
 
 
 #define ID_ERROR -1
@@ -134,7 +134,7 @@ void server_disconnect(){
     return json_get_status(id);
     //throws getException
  }
- */
+
 
 
 int main(){
@@ -146,9 +146,10 @@ int main(){
 
     string command1="command_one";
     string command2="command two";
-    json_send_command(command1,myID);
-    json_send_command(command2,myID);
-    debug_print_vector(json_get_commands(myID));
+    json_send_command(command1,testID);
+    json_send_command(command2,testID);
+    debug_print_vector(json_get_commands(testID));
+    return 0;
 
 }
-
+ */
